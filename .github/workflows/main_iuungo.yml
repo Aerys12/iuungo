@@ -73,3 +73,6 @@ jobs:
         with:
           app-name: 'iuungo'
           slot-name: 'Production'
+
+      - name: Run migrations
+        run: uv run python manage.py migrate --noinput
