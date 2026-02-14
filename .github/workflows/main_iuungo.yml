@@ -34,6 +34,7 @@ jobs:
 
       - name: Collect static files
         run: |
+          source antenv/bin/activate
           python manage.py collectstatic --noinput
           python manage.py compress --force
         env:
