@@ -45,7 +45,6 @@ jobs:
           zip -r deploy.zip . \
             -x ".git/*" \
             -x ".github/*" \
-            -x ".venv/*" \
             -x "*.pyc" \
             -x "__pycache__/*" \
             -x "tests/*" \
