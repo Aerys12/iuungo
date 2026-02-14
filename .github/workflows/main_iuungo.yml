@@ -76,6 +76,3 @@ jobs:
         with:
           app-name: 'iuungo'
           slot-name: 'Production'
-
-      - name: Run migrations
-        run: .venv/bin/python manage.py migrate --noinput
