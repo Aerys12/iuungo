@@ -15,9 +15,11 @@
 {% endblock title %}
 {% block body %}
   <div class="min-h-screen flex items-center justify-center px-4 py-6">
-    {% block content %}
-    {% endblock content %}
-    {% block extra_body %}
-    {% endblock extra_body %}
+    <div class="w-full max-w-7xl">
+      {% block content %}
+      {% endblock content %}
+      {% block extra_body %}
+      {% endblock extra_body %}
+    </div>
   </div>
 {% endblock body %}
