@@ -17,8 +17,8 @@
     <meta name="author" content="developed-by-aerys" />
     <link rel="icon" href="{% static 'images/logo.png' %}" />
     {% block css %}
-      <link href="{% static 'css/output.css' %}" rel="stylesheet" type="text/css" />
       {% compress css %}
+        <link href="{% static 'css/output.css' %}" rel="stylesheet" type="text/css" />
         <link href="{% static 'css/project.css' %}" rel="stylesheet" />
       {% endcompress %}
     {% endblock css %}
