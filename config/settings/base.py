@@ -67,6 +67,7 @@ WSGI_APPLICATION = "config.wsgi.application"
 # APPS
 # ------------------------------------------------------------------------------
 DJANGO_APPS = [
+    "allauth_ui",
     "django.contrib.auth",
     "django.contrib.contenttypes",
     "django.contrib.sessions",
@@ -84,6 +85,8 @@ THIRD_PARTY_APPS = [
     "allauth.account",
     "allauth.mfa",
     "allauth.socialaccount",
+    "widget_tweaks",
+    "slippers",
     "django_celery_beat",
     "rest_framework",
     "rest_framework.authtoken",
@@ -362,3 +365,4 @@ SPECTACULAR_SETTINGS = {
 }
 # Your stuff...
 # ------------------------------------------------------------------------------
+ALLAUTH_UI_THEME = "bumblebee"

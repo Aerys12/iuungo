@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@source not "./tailwindcss";
+@source not "./daisyui{,*}.mjs";
+
+/* Your project templates */
+@source "../../../iuungo/templates";
+
+@source "../../../.venv/lib/python3.13/site-packages/allauth_ui/templates";
+
+@plugin "./daisyui.mjs" {
+    themes: bumblebee --default, dark --prefersdark;
+  }
+
+  .alert-debug {
+    color: black;
+    background-color: white;
+    border-color: #d6e9c6;
+  }
+
+  .alert-error {
+    color: #b94a48;
+    background-color: #f2dede;
+    border-color: #eed3d7;
+  }
+
+  .main-items li a:hover {
+    background: transparent;
+    @apply text-error;
+
+  }
+
+  #log-in-link:hover {
+    background: transparent;
+    @apply text-error
+  }
