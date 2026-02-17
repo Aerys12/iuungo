@@ -1,1 +1,17 @@
-{% extends "base.html" %}
+{# templates/pages/about.html #}
+{% extends "layouts/public.html" %}
+
+{% load i18n %}
+
+{% block title %}
+  About
+{% endblock title %}
+{% block pagewrap_class %}
+{% endblock pagewrap_class %}
+{% block content %}
+  <section class="py-16">
+    <div class="max-w-7xl mx-auto w-full px-4">
+      <p>This is the about section</p>
+    </div>
+  </section>
+{% endblock content %}

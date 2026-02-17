@@ -1,1 +1,16 @@
-{% extends "base.html" %}
+{# templates/pages/home.html #}
+{% extends "layouts/public.html" %}
+
+{% load i18n %}
+
+{% block title %}
+  Iuungo
+{% endblock title %}
+{% block pagewrap_class %}
+{% endblock pagewrap_class %}
+{% block content %}
+  {% include "public/sections/hero_signup.html" %}
+  {% include "public/sections/send_letter.html" %}
+  {% include "public/sections/latest_articles.html" %}
+  {% include "public/sections/signup_band.html" %}
+{% endblock content %}

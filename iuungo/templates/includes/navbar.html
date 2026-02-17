@@ -1,0 +1,71 @@
+{# templates/includes/navbar.html #}
+{% load static i18n %}
+
+<header class="w-full">
+  <div class="max-w-7xl mx-auto w-full px-4">
+    <div class="navbar w-full p-0">
+      <div class="navbar-start flex-1">
+        <div class="flex-none md:hidden">
+          <label for="my-drawer"
+                 aria-label="open sidebar"
+                 class="btn btn-square btn-ghost">
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 fill="none"
+                 viewBox="0 0 24 24"
+                 class="inline-block h-6 w-6 stroke-current">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </label>
+        </div>
+        <a class="flex items-center my-3 mx-auto lg:mx-0"
+           href="{% url 'home' %}">
+          <img src="{% static 'images/logo.png' %}" alt="Iuungo" class="h-16 w-16" />
+        </a>
+      </div>
+      <div class="navbar-center hidden md:flex">
+        <ul class="menu main-items menu-horizontal px-1 py-0 text-lg font-semibold">
+          <li>
+            <a href="{% url 'home' %}">Home</a>
+          </li>
+          <li>
+            <a href="#">{% translate "Letters" %}</a>
+          </li>
+          <li>
+            <a href="#">{% translate "Self-Knowledge" %}</a>
+          </li>
+          <li>
+            <a href="#">{% translate "Relationships" %}</a>
+          </li>
+          <li>
+            <a href="#">{% translate "Calm" %}</a>
+          </li>
+        </ul>
+      </div>
+      <div class="navbar-end hidden md:flex flex-1">
+        <ul class="menu menu-horizontal px-1 flex items-center font-semibold text-xl">
+          {% if request.user.is_authenticated %}
+            <li>
+              <a href="{% url 'users:detail' request.user.pk %}">{% translate "My Profile" %}</a>
+            </li>
+            <li>
+              <a href="{% url 'account_logout' %}">{% translate "Sign Out" %}</a>
+            </li>
+          {% else %}
+            <li>
+              <a id="log-in-link"
+                 class="hover:bg-transparent"
+                 href="{% url 'account_login' %}">{% translate "Sign In" %}</a>
+            </li>
+            {% if ACCOUNT_ALLOW_REGISTRATION %}
+              <li>
+                <a class="btn  btn-active btn-error text-lg"
+                   id="sign-up-link"
+                   href="{% url 'account_signup' %}">{% translate "Sign Up" %}</a>
+              </li>
+            {% endif %}
+          {% endif %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>

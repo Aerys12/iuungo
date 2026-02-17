@@ -1,0 +1,9 @@
+{# templates/components/ui/input.html #}
+<input {% if type %}type="{{ type }}"{% else %}type="text"{% endif %}
+       {% if name %}name="{{ name }}"{% endif %}
+       {% if id %}id="{{ id }}"{% endif %}
+       {% if value %}value="{{ value }}"{% endif %}
+       {% if placeholder %}placeholder="{{ placeholder }}"{% endif %}
+       {% if autocomplete %}autocomplete="{{ autocomplete }}"{% endif %}
+       {% if required %}required{% endif %}
+       class="input input-bordered w-full {{ class|default:'' }}" />

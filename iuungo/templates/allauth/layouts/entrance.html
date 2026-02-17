@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+{% extends "layouts/app.html" %}
 
 {% load i18n %}
 
@@ -15,7 +15,7 @@
 {% endblock title %}
 {% block body %}
   <div class="min-h-screen flex items-center justify-center px-4 py-6">
-    <div class="w-full max-w-7xl">
+    <div class="w-full">
       {% block content %}
       {% endblock content %}
       {% block extra_body %}

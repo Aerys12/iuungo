@@ -1,0 +1,19 @@
+{# templates/layouts/public.html #}
+{% extends "base.html" %}
+
+{% block body %}
+  <div class="drawer min-h-screen">
+    <input id="my-drawer" type="checkbox" class="drawer-toggle" />
+    <div class="drawer-content flex flex-col min-h-screen">
+      {% include "includes/navbar.html" %}
+      <main class="flex-1 w-full">
+        {% include "includes/messages.html" %}
+        <div class="{% block pagewrap_class %}{% endblock pagewrap_class %}">
+          {% block content %}
+          {% endblock content %}
+        </div>
+      </main>
+    </div>
+    {% include "includes/drawer_sidebar.html" %}
+  </div>
+{% endblock body %}

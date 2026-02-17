@@ -1,0 +1,31 @@
+{# templates/public/sections/hero_signup.html #}
+{% load i18n %}
+
+<section class="hero bg-base-200 py-20">
+  <div class="hero-content flex-col lg:flex-row gap-12">
+    {# Left side — Messaging #}
+    <div class="text-center lg:text-left max-w-xl">
+      <p class="text-2xl font-semibold mb-4">Understand the hidden patterns shaping your life</p>
+      <p class="text-base-content/70">
+        Get weekly insights that help you have fewer blind spots and better judgment in how you think, choose, and relate.
+      </p>
+    </div>
+    {# Right side — Card with email form #}
+    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+      <div class="card-body">
+        <form method="post" action="#">
+          {% csrf_token %}
+          <fieldset class="fieldset">
+            <label class="label">Email</label>
+            <input type="email"
+                   name="email"
+                   placeholder="Email address"
+                   class="input input-bordered w-full"
+                   required />
+            <button type="submit" class="btn btn-primary mt-4 w-full">START READING</button>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,7 @@
+{# templates/components/ui/button.html #}
+{% if href %}
+  <a href="{{ href }}" class="btn {{ class|default:'' }}">{{ text }}</a>
+{% else %}
+  <button {% if type %}type="{{ type }}"{% else %}type="button"{% endif %}
+          class="btn {{ class|default:'' }}">{{ text }}</button>
+{% endif %}

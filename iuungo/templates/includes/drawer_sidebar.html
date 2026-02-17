@@ -1,0 +1,46 @@
+{# templates/includes/drawer_sidebar.html #}
+{% load static i18n %}
+
+<div class="drawer-side">
+  <label for="my-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
+  <ul class="menu bg-base-200 min-h-full w-80 p-4">
+    <li class="mb-4">
+      <a class="flex items-center" href="{% url 'home' %}">
+        <img src="{% static 'images/logo.png' %}" alt="Iuungo" class="h-10" />
+      </a>
+    </li>
+    <li>
+      <a href="{% url 'home' %}">Home</a>
+    </li>
+    <li>
+      <a href="#">{% translate "Letters" %}</a>
+    </li>
+    <li>
+      <a href="#">{% translate "Self-Knowledge" %}</a>
+    </li>
+    <li>
+      <a href="#">{% translate "Relationships" %}</a>
+    </li>
+    <li>
+      <a href="#">{% translate "Calm" %}</a>
+    </li>
+    <div class="divider"></div>
+    {% if request.user.is_authenticated %}
+      <li>
+        <a href="{% url 'users:detail' request.user.pk %}">{% translate "My Profile" %}</a>
+      </li>
+      <li>
+        <a href="{% url 'account_logout' %}">{% translate "Sign Out" %}</a>
+      </li>
+    {% else %}
+      {% if ACCOUNT_ALLOW_REGISTRATION %}
+        <li>
+          <a id="sign-up-link" href="{% url 'account_signup' %}">{% translate "Sign Up" %}</a>
+        </li>
+      {% endif %}
+      <li>
+        <a id="log-in-link" href="{% url 'account_login' %}">{% translate "Sign In" %}</a>
+      </li>
+    {% endif %}
+  </ul>
+</div>

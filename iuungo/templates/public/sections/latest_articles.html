@@ -1,0 +1,46 @@
+<section class=" bg-base-100 w-full">
+  <div class="max-w-7xl mx-auto w-full px-4">
+    <!-- Section Header -->
+    <div class="mb-12 text-center">
+      <h2 class="text-4xl font-bold mb-4">Latest Articles</h2>
+      <p class="text-base-content/70">Essays on self-knowledge, relationships, and clarity.</p>
+    </div>
+    <!-- Grid -->
+    <div class="grid grid-cols-2 lg:grid-cols-3 gap-6 py-8">
+      <!-- Card 1 -->
+      <div class="card bg-base-100 shadow-sm">
+        <figure>
+          <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+               alt="Article image" />
+        </figure>
+        <div class="card-body">
+          <h3 class="card-title">
+            Why You Repeat the Same Relationship Pattern
+            <div class="badge badge-secondary">NEW</div>
+          </h3>
+          <p class="text-sm text-base-content/70">The invisible scripts that shape your choices.</p>
+          <div class="card-actions justify-end">
+            <div class="badge badge-outline">Relationships</div>
+            <div class="badge badge-outline">Psychology</div>
+          </div>
+        </div>
+      </div>
+      <!-- Duplicate 5 more -->
+      {% for i in "12345" %}
+        <div class="card bg-base-100 shadow-sm">
+          <figure>
+            <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                 alt="Article image" />
+          </figure>
+          <div class="card-body">
+            <h3 class="card-title">Article Title</h3>
+            <p class="text-sm text-base-content/70">Short description of the article goes here.</p>
+            <div class="card-actions justify-end">
+              <div class="badge badge-outline">Category</div>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
