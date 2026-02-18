@@ -185,9 +185,9 @@ django==5.2.11 \
     #   drf-spectacular
     #   iuungo
     #   slippers
-django-allauth==65.14.1 \
-    --hash=sha256:204d8a07f217c41769a62aa4c7ae7afeb2886c841bebda6964e613e5be72e8b3 \
-    --hash=sha256:2467656d0adc835607e407847054979ab5a943778f6eb8980ed2a29eee6c5790
+django-allauth==65.14.3 \
+    --hash=sha256:1d8e1127bdffceb8001bdd9bafbf97661f81e92f4b7bd4f6e799167b0311286d \
+    --hash=sha256:548eef76ab85f6e48f46f98437abf22acf0e834f73e9915fb6cc3f31a0dcdf4d
     # via iuungo
 django-allauth-ui==1.8.1 \
     --hash=sha256:306d0ebe013181a1972b6e1d2ecaf911e95e247dfb1df50d05a794cad7dca84e \
@@ -219,9 +219,9 @@ django-crispy-forms==2.5 \
     # via
     #   crispy-bootstrap5
     #   iuungo
-django-environ==0.12.0 \
-    --hash=sha256:227dc891453dd5bde769c3449cf4a74b6f2ee8f7ab2361c93a07068f4179041a \
-    --hash=sha256:92fb346a158abda07ffe6eb23135ce92843af06ecf8753f43adf9d2366dcc0ca
+django-environ==0.13.0 \
+    --hash=sha256:37799d14cd78222c6fd8298e48bfe17965ff8e586091ad66a463e52e0e7b799e \
+    --hash=sha256:6c401e4c219442c2c4588c2116d5292b5484a6f69163ed09cd41f3943bfb645f
     # via iuungo
 django-model-utils==5.0.0 \
     --hash=sha256:041cdd6230d2fbf6cd943e1969318bce762272077f4ecd333ab2263924b4e5eb \
@@ -259,9 +259,9 @@ fido2==2.1.1 \
     --hash=sha256:f1379f845870cc7fc64c7f07323c3ce41e8c96c37054e79e0acd5630b3fec5ac \
     --hash=sha256:f85c16c8084abf6530b6c6ec3a0cf8575943321842e06916686943a8b784182c
     # via django-allauth
-gunicorn==25.0.3 \
-    --hash=sha256:aca364c096c81ca11acd4cede0aaeea91ba76ca74e2c0d7f879154db9d890f35 \
-    --hash=sha256:b53a7fff1a07b825b962af320554de44ae77a26abfa373711ff3f83d57d3506d
+gunicorn==25.1.0 \
+    --hash=sha256:1426611d959fa77e7de89f8c0f32eed6aa03ee735f98c01efba3e281b1c47616 \
+    --hash=sha256:d0b1236ccf27f72cfe14bce7caadf467186f19e865094ca84221424e839b8b8b
     # via iuungo
 hiredis==3.3.0 \
     --hash=sha256:105596aad9249634361815c574351f1bd50455dc23b537c2940066c4a9dea685 \
@@ -402,9 +402,9 @@ rcssmin==1.2.2 \
     # via
     #   django-compressor
     #   iuungo
-redis==7.1.1 \
-    --hash=sha256:a2814b2bda15b39dad11391cc48edac4697214a8a5a4bd10abe936ab4892eb43 \
-    --hash=sha256:f77817f16071c2950492c67d40b771fa493eb3fccc630a424a10976dbb794b7a
+redis==7.2.0 \
+    --hash=sha256:01f591f8598e483f1842d429e8ae3a820804566f1c73dca1b80e23af9fba0497 \
+    --hash=sha256:4dd5bf4bd4ae80510267f14185a15cba2a38666b941aff68cccf0256b51c1f26
     # via
     #   django-redis
     #   iuungo
@@ -469,9 +469,9 @@ rpds-py==0.30.0 \
     # via
     #   jsonschema
     #   referencing
-sentry-sdk==2.52.0 \
-    --hash=sha256:931c8f86169fc6f2752cb5c4e6480f0d516112e78750c312e081ababecbaf2ed \
-    --hash=sha256:fa0bec872cfec0302970b2996825723d67390cdd5f0229fb9efed93bd5384899
+sentry-sdk==2.53.0 \
+    --hash=sha256:46e1ed8d84355ae54406c924f6b290c3d61f4048625989a723fd622aab838899 \
+    --hash=sha256:6520ef2c4acd823f28efc55e43eb6ce2e6d9f954a95a3aa96b6fd14871e92b77
     # via iuungo
 six==1.17.0 \
     --hash=sha256:4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274 \
