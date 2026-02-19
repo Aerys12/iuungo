@@ -26,11 +26,11 @@
 
   .main-items li a:hover {
     background: transparent;
-    @apply text-error;
+    @apply text-primary;
 
   }
 
   #log-in-link:hover {
     background: transparent;
-    @apply text-error
+    @apply text-primary
   }

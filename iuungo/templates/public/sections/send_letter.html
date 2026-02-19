@@ -1,17 +1,21 @@
 {# templates/public/sections/send_letter.html #}
 {% load i18n %}
+{% load static %}
 
-<section class="hero bg-white w-full">
-  <div class="max-w-7xl bg-white mx-auto w-full px-4">
-    <div class="hero-content py-24 text-center">
-      <div class="max-w-xl">
-        <h2 class="text-4xl font-bold mb-6">Send a Letter</h2>
-        <p class="text-base-content/70 mb-8">
-          Write something honest. Thoughtful. Unfiltered.
-          Send a note that actually means something.
-        </p>
-        <a href="#" class="btn btn-secondary px-8">Write a Letter</a>
-      </div>
+<section class="hero bg-white min-h-[60vh]">
+  <div class="hero-content flex-col lg:flex-row-reverse gap-12 max-w-6xl mx-auto px-4">
+    <!-- Image -->
+    <img src="{% static 'images/hero-letter.jpg' %}"
+         alt="Letter illustration"
+         class="max-w-sm md:max-w-md rounded-xl shadow-2xl" />
+    <!-- Text Content -->
+    <div class="max-w-xl text-center lg:text-left">
+      <h2 class="text-4xl md:text-5xl font-semibold leading-tight mb-6">We exit to bring people closer.</h2>
+      <p class="text-base-content/70 text-lg mb-8">
+        We want our members to express what’s real, communicate clearly,
+        and build relationships rooted in honesty.
+      </p>
+      <a href="#" class="btn btn-lg btn-primary px-8">Write a Letter</a>
     </div>
   </div>
 </section>
