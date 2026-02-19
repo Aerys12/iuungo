@@ -1,77 +1,60 @@
 {# templates/public/sections/benefits.html #}
 {% load i18n %}
+{% load static %}
 
 {# Tools / Practices section #}
-<section class="hero bg-error/10 py-24">
+<section class="hero py-8">
   <div class="hero-container mx-auto px-4">
     <div class="max-w-7xl">
       <div class="text-center">
-        <h2 class="text-4xl font-semibold">Three Simple Practices. Real Change.</h2>
+        <h2 class="text-5xl font-bold">We're here to help you feel better</h2>
       </div>
-      <div class="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        {# Card 1 — Two-Do List (Heart) #}
-        <div class="p-6">
-          <div class="flex flex-col items-start text-start gap-4">
-            <div class="rounded-2xl bg-error/15 p-4">
-              {# Tabler Icon: heart (filled) #}
-              <svg xmlns="http://www.w3.org/2000/svg"
-                   viewBox="0 0 24 24"
-                   class="h-8 w-8 fill-error"
-                   aria-hidden="true">
-                <path d="M0 0h24v24H0z" fill="none" />
-                <path d="M12 20l-7.5 -7.5a5 5 0 0 1 7.5 -7.5a5 5 0 0 1 7.5 7.5l-7.5 7.5z" />
-              </svg>
-            </div>
-            <div class="flex flex-col gap-4">
-              <h3 class="text-3xl font-semibold">Two-Do List</h3>
-              <p class="mt-1 text-lg text-base-content/70">Two small actions each week to strengthen your relationship.</p>
+      <div class="mt-10 grid grid-cols-1 gap-8 md:grid-cols-2 ">
+        <div class="card bg-primary w-full shadow-sm ">
+          <div>
+            <figure>
+              <img src="{% static 'images/hero-card-guides.jpg' %}" alt="Shoes" />
+            </figure>
+          </div>
+          <div class="card-body gap-4">
+            <h2 class="card-title text-3xl">Guides</h2>
+            <p class="text-lg">
+              The right kind of self-knowledge helps you avoid costly mistakes, relate more deeply, and build stronger relationships. Discover the life you’re meant to lead — intentionally.
+            </p>
+            <div class="card-actions justify-start">
+              <button class="btn btn-accent">Explore the guides</button>
             </div>
           </div>
         </div>
-        {# Card 2 — 5-Min Flow (Leaf) #}
-        <div class="p-6">
-          <div class="flex flex-col items-start text-start gap-4">
-            <div class="rounded-2xl bg-error/15 p-4">
-              {# Tabler Icon: leaf (filled) #}
-              <svg xmlns="http://www.w3.org/2000/svg"
-                   viewBox="0 0 24 24"
-                   class="h-8 w-8 fill-error"
-                   aria-hidden="true">
-                <path d="M0 0h24v24H0z" fill="none" />
-                <path d="M19.5 3c-5.5 0-10.5 4.5-12.2 9.2c-1.6 4.4.2 7.8 4.2 7.8c5.4 0 9.5-4.4 9.5-10.5c0-2.1-.5-4.1-1.5-6.5z" />
-                <path d="M9 21c2.5-6 6.5-10 12-12" />
-              </svg>
-            </div>
-            <div class="flex flex-col gap-4">
-              <h3 class="text-3xl font-semibold">5-Min Flow</h3>
-              <p class="mt-1 text-lg text-base-content/70">
-                A guided writing reset to clear mental clutter and organise your thoughts in just five minutes.
-              </p>
+        <div class="card bg-primary/50 w-full shadow-sm">
+          <div>
+            <figure>
+              <img src="{% static 'images/hero-card-5-min-flow.jpg' %}" alt="Shoes" />
+            </figure>
+          </div>
+          <div class="card-body gap-4">
+            <h2 class="card-title text-3xl">5-Minute Flow</h2>
+            <p class="text-lg">
+              Modern life fuels constant anxiety. Lasting calm comes from organizing your thoughts. These short guided reflections help you clear mental noise and regain perspective.
+            </p>
+            <div class="card-actions justify-start">
+              <button class="btn btn-accent">Start your reset</button>
             </div>
           </div>
         </div>
-        {# Card 3 — Deep Guides (Books) #}
-        <div class="p-6 sm:col-span-2 lg:col-span-1">
-          <div class="flex flex-col items-start text-start gap-4">
-            <div class="rounded-2xl bg-error/15 p-4">
-              {# Tabler Icon: books (filled) #}
-              <svg xmlns="http://www.w3.org/2000/svg"
-                   viewBox="0 0 24 24"
-                   class="h-8 w-8 fill-error"
-                   aria-hidden="true">
-                <path d="M0 0h24v24H0z" fill="none" />
-                <path d="M6 4h10a2 2 0 0 1 2 2v14a1 1 0 0 1 -1 1H7a2 2 0 0 0 -2 2V6a2 2 0 0 1 2 -2z" />
-                <path d="M18 4h1a2 2 0 0 1 2 2v14a1 1 0 0 1 -1 1h-2" />
-                <path d="M9 8h6" />
-                <path d="M9 12h6" />
-                <path d="M9 16h6" />
-              </svg>
-            </div>
-            <div class="flex flex-col gap-4">
-              <h3 class="text-3xl font-semibold">Deep Guides</h3>
-              <p class="mt-1 text-lg text-base-content/70">
-                Practical psychology to help you understand your patterns and communicate with clarity.
-              </p>
+        <div class="card bg-base-100 w-full shadow-sm">
+          <figure>
+            <img src="{% static 'images/hero-card-two-do-photo-3.webp' %}"
+                 alt="Date-night journal" />
+          </figure>
+          <div class="card-body gap-4">
+            <h2 class="card-title text-3xl">Two-Do List</h2>
+            <p class="text-lg">
+              Feeling stuck? Struggling to communicate? Each Two-Do List gives you two simple actions designed
+              to improve connection, clarity, and closeness.
+            </p>
+            <div class="card-actions justify-start">
+              <button class="btn btn-accent">Try this week’s Two-Do</button>
             </div>
           </div>
         </div>

@@ -3,19 +3,21 @@
 {% load static %}
 
 <section class="hero bg-white min-h-[60vh]">
-  <div class="hero-content flex-col lg:flex-row-reverse gap-12 max-w-6xl mx-auto px-4">
-    <!-- Image -->
-    <img src="{% static 'images/hero-letter.jpg' %}"
-         alt="Letter illustration"
-         class="max-w-sm md:max-w-md rounded-xl shadow-2xl" />
-    <!-- Text Content -->
-    <div class="max-w-xl text-center lg:text-left">
-      <h2 class="text-4xl md:text-5xl font-semibold leading-tight mb-6">We exit to bring people closer.</h2>
-      <p class="text-base-content/70 text-lg mb-8">
-        We want our members to express what’s real, communicate clearly,
-        and build relationships rooted in honesty.
-      </p>
-      <a href="#" class="btn btn-lg btn-primary px-8">Write a Letter</a>
+  <div class="hero-content">
+    <div class="flex flex-col lg:flex-row-reverse gap-8 max-w-6xl">
+      <!-- Image -->
+      <img src="{% static 'images/hero-letter.jpg' %}"
+           alt="Letter illustration"
+           class="w-full max-w-sm md:max-w-md rounded-xl shadow-2xl" />
+      <!-- Text Content -->
+      <div class="max-w-xl text-start lg:text-left">
+        <h2 class="text-4xl md:text-5xl font-semibold leading-tight mb-6">We exist to bring people closer.</h2>
+        <p class="text-base-content/70 text-lg mb-8 max-w-md mx-auto lg:mx-0">
+          We want our members to express what’s real, communicate clearly,
+          and build relationships rooted in honesty.
+        </p>
+        <a href="#" class="btn btn-lg btn-primary px-8">Write a Letter</a>
+      </div>
     </div>
   </div>
 </section>

@@ -2,13 +2,17 @@
 {% load i18n %}
 
 <section class="hero bg-primary min-h-[60vh]">
-  <div class="hero-content text-start">
-    <div class="max-w-4xl">
-      <h1 class="text-4xl md:text-6xl font-semibold leading-tight">Understand Yourself. Relate Better. Live Calmer.</h1>
-      <p class="py-6 text-base-content/70 text-lg">
-        Tools that help you reduce blind spots, communicate clearly, and build the kind of relationships and life you actually want.
+  <div class="hero-content">
+    <div class="max-w-4xl text-center">
+      <h1 class="text-4xl md:text-6xl font-semibold leading-tight">Understand Yourself. Relate Better. Stress Less</h1>
+      <p class="py-6 text-base-content/70 text-lg max-w-xl mx-auto">
+        Tools that help you live a more fulfilling life, build better relationships, and navigate the stress of modern living.
       </p>
       <a class="btn btn-lg btn-accent" href="{% url 'account_signup' %}">{% translate "Start your journey" %}</a>
+      <div class="flex gap-1 items-center justify-center">
+        <p class="py-6 text-base-content/70">Want to learn more?</p>
+        <a href="#" class="link link-accent text-sm">Explore Membership</a>
+      </div>
     </div>
   </div>
 </section>
